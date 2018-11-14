@@ -1,0 +1,14 @@
+logging:
+  level:
+    org.springframework: INFO
+    com.spring.tests.airportservices: INFO
+server:
+  port: 8080
+  servlet:
+    contextPath: /openflights
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
