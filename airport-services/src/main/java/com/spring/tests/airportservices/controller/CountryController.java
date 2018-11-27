@@ -26,9 +26,9 @@ public class CountryController {
 	public List<Airport> search(@PathVariable String countryName) {
 		List<Airport> retval = flightService.airportsByCountry(countryName);
 		if (retval != null) {
-			logger.info("Aiports on contry {}: {}", countryName, retval.size());
+			logger.info("Airports on country {}: {}", countryName, retval.size());
 		} else {
-			logger.info("Aiports on contry {}: 0", countryName);
+			logger.info("Airports on country {}: 0", countryName);
 		}
 		return retval;
 	}
