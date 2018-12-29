@@ -1,0 +1,10 @@
+insert into Product (id, name, description, active, qtd, registered) values (1, 'Product 1', 'Description 1', true, 10, dateadd('year', -1, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (2, 'Product 2', 'Description 2', true, 20, dateadd('year', -2, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (3, 'Product 3', 'Description 3', true, 30, dateadd('year', -3, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (4, 'Product 4', 'Description 4', true, 14, dateadd('year', -4, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (5, 'Product 5', 'Description 5', true, 15, dateadd('year', -5, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (6, 'Product 6', 'Description 6', false, 17, dateadd('year', -6, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (7, 'Product 7', 'Description 7', false, 11, dateadd('year', -7, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (8, 'Product 8', 'Description 8', false, 12, dateadd('year', -8, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (9, 'Product 9', 'Description 9', false, 45, dateadd('year', -9, current_date));
+insert into Product (id, name, description, active, qtd, registered) values (10, 'Product 10', 'Description 10', false, 100, dateadd('year', -10, current_date));

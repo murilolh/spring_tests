@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.spring.tests.contactservices.dao.ContactDAO;
+import com.spring.tests.contactservices.dao.ContactDao;
 import com.spring.tests.contactservices.model.Contact;
 
 @Controller
@@ -16,10 +16,10 @@ import com.spring.tests.contactservices.model.Contact;
 public class ContactController {
 
 	@Autowired
-	private ContactDAO contactDao;
+	private ContactDao contactDao;
 
 	@GetMapping
-	public ModelAndView listar() {
+	public ModelAndView listAll() {
 		List<Contact> list = contactDao.findAll();
 
 		ModelAndView modelAndView = new ModelAndView("contacts");

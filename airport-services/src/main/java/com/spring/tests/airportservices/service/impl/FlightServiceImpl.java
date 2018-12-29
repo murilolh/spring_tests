@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.spring.tests.airportservices.dao.AirportDAO;
+import com.spring.tests.airportservices.dao.AirportDao;
 import com.spring.tests.airportservices.model.Airport;
 import com.spring.tests.airportservices.service.FlightService;
 
@@ -13,7 +13,7 @@ import com.spring.tests.airportservices.service.FlightService;
 public class FlightServiceImpl implements FlightService {
 
 	@Autowired
-	private AirportDAO airportDAO;
+	private AirportDao airportDAO;
 
 	@Override
 	public List<Airport> airportsByCity(String city) {

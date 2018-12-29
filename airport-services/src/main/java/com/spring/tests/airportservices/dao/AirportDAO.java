@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.spring.tests.airportservices.model.Airport;
 
-public interface AirportDAO extends JpaRepository<Airport, Long> {
+public interface AirportDao extends JpaRepository<Airport, Long> {
 
 	List<Airport> findByCityIgnoreCase(String city);
 
